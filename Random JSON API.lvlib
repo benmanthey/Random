@@ -35,22 +35,22 @@
 	<Property Name="Use Data Logging Database" Type="Bool">true</Property>
 	<Item Name="Basic Methods" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">1</Property>
-		<Item Name="generateBlobs.vi" Type="VI" URL="../Digital Signing/generateBlobs.vi"/>
-		<Item Name="generateDecimalFractions.vi" Type="VI" URL="../Digital Signing/generateDecimalFractions.vi"/>
-		<Item Name="generateGaussians.vi" Type="VI" URL="../Digital Signing/generateGaussians.vi"/>
-		<Item Name="generateIntegers.vi" Type="VI" URL="../Digital Signing/generateIntegers.vi"/>
-		<Item Name="generateStrings.vi" Type="VI" URL="../Digital Signing/generateStrings.vi"/>
-		<Item Name="generateUUIDs.vi" Type="VI" URL="../Digital Signing/generateUUIDs.vi"/>
+		<Item Name="generateBlobs.vi" Type="VI" URL="../Basic Methods/generateBlobs.vi"/>
+		<Item Name="generateDecimalFractions.vi" Type="VI" URL="../Basic Methods/generateDecimalFractions.vi"/>
+		<Item Name="generateGaussians.vi" Type="VI" URL="../Basic Methods/generateGaussians.vi"/>
+		<Item Name="generateIntegers.vi" Type="VI" URL="../Basic Methods/generateIntegers.vi"/>
+		<Item Name="generateStrings.vi" Type="VI" URL="../Basic Methods/generateStrings.vi"/>
+		<Item Name="generateUUIDs.vi" Type="VI" URL="../Basic Methods/generateUUIDs.vi"/>
 		<Item Name="getUsage.vi" Type="VI" URL="../Basic Methods/getUsage.vi"/>
 	</Item>
 	<Item Name="Digital Signing" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">1</Property>
-		<Item Name="generateSignedBlobs.vi" Type="VI" URL="../Basic Methods/generateSignedBlobs.vi"/>
-		<Item Name="generateSignedDecimalFractions.vi" Type="VI" URL="../Basic Methods/generateSignedDecimalFractions.vi"/>
-		<Item Name="generateSignedGaussians.vi" Type="VI" URL="../Basic Methods/generateSignedGaussians.vi"/>
-		<Item Name="generateSignedIntegers.vi" Type="VI" URL="../Basic Methods/generateSignedIntegers.vi"/>
-		<Item Name="generateSignedStrings.vi" Type="VI" URL="../Basic Methods/generateSignedStrings.vi"/>
-		<Item Name="generateSignedUUIDs.vi" Type="VI" URL="../Basic Methods/generateSignedUUIDs.vi"/>
+		<Item Name="generateSignedBlobs.vi" Type="VI" URL="../Digital Signing/generateSignedBlobs.vi"/>
+		<Item Name="generateSignedDecimalFractions.vi" Type="VI" URL="../Digital Signing/generateSignedDecimalFractions.vi"/>
+		<Item Name="generateSignedGaussians.vi" Type="VI" URL="../Digital Signing/generateSignedGaussians.vi"/>
+		<Item Name="generateSignedIntegers.vi" Type="VI" URL="../Digital Signing/generateSignedIntegers.vi"/>
+		<Item Name="generateSignedStrings.vi" Type="VI" URL="../Digital Signing/generateSignedStrings.vi"/>
+		<Item Name="generateSignedUUIDs.vi" Type="VI" URL="../Digital Signing/generateSignedUUIDs.vi"/>
 		<Item Name="verifySignature.vi" Type="VI" URL="../Digital Signing/verifySignature.vi"/>
 	</Item>
 	<Item Name="Documentation" Type="Folder">

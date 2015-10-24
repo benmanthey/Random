@@ -10,6 +10,8 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="Post-Build Action.vi" Type="VI" URL="../Sub Vi&apos;s/Post-Build Action.vi"/>
+		<Item Name="Pre-Build Action.vi" Type="VI" URL="../Sub Vi&apos;s/Pre-Build Action.vi"/>
 		<Item Name="Random JSON API.lvlib" Type="Library" URL="../Random JSON API.lvlib"/>
 		<Item Name="verifySignatureExample.vi" Type="VI" URL="../verifySignatureExample.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -58,15 +60,19 @@
 			<Item Name="Random.org Packed Library" Type="Packed Library">
 				<Property Name="Bld_buildCacheID" Type="Str">{1A8637AD-67F4-49D1-B826-54EF9489414C}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">Random.org Packed Library</Property>
+				<Property Name="Bld_excludeDependentDLLs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeDependentPPLs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeTypedefs" Type="Bool">true</Property>
 				<Property Name="Bld_localDestDir" Type="Path">../builds</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Post-Build Action.vi</Property>
+				<Property Name="Bld_preActionVIID" Type="Ref">/My Computer/Pre-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{5DDA48C4-2E3C-4079-90E6-5FF4A0F5AAFA}</Property>
-				<Property Name="Bld_version.minor" Type="Int">9</Property>
-				<Property Name="Bld_version.patch" Type="Int">2</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Random JSON API.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME.lvlibp</Property>
 				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
@@ -77,7 +83,7 @@
 				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{BFE7C916-0388-4C99-AC4D-AE1848EA3E48}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{DA3FE419-E3E8-43C0-ABD0-87CB0E62481A}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Random JSON API.lvlib</Property>
@@ -87,7 +93,42 @@
 				<Property Name="Source[1].preventRename" Type="Bool">true</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">Library</Property>
-				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="Source[2].Container.applyProperties" Type="Bool">true</Property>
+				<Property Name="Source[2].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Random JSON API.lvlib/Basic Methods</Property>
+				<Property Name="Source[2].properties[0].type" Type="Str">Allow debugging</Property>
+				<Property Name="Source[2].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[2].propertiesCount" Type="Int">1</Property>
+				<Property Name="Source[2].type" Type="Str">Container</Property>
+				<Property Name="Source[3].Container.applyProperties" Type="Bool">true</Property>
+				<Property Name="Source[3].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/Random JSON API.lvlib/Digital Signing</Property>
+				<Property Name="Source[3].properties[0].type" Type="Str">Allow debugging</Property>
+				<Property Name="Source[3].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[3].propertiesCount" Type="Int">1</Property>
+				<Property Name="Source[3].type" Type="Str">Container</Property>
+				<Property Name="Source[4].Container.applyProperties" Type="Bool">true</Property>
+				<Property Name="Source[4].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/My Computer/Random JSON API.lvlib/Documentation</Property>
+				<Property Name="Source[4].properties[0].type" Type="Str">Allow debugging</Property>
+				<Property Name="Source[4].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[4].propertiesCount" Type="Int">1</Property>
+				<Property Name="Source[4].type" Type="Str">Container</Property>
+				<Property Name="Source[5].Container.applyProperties" Type="Bool">true</Property>
+				<Property Name="Source[5].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/My Computer/Random JSON API.lvlib/Sub VI's</Property>
+				<Property Name="Source[5].properties[0].type" Type="Str">Allow debugging</Property>
+				<Property Name="Source[5].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[5].propertiesCount" Type="Int">1</Property>
+				<Property Name="Source[5].type" Type="Str">Container</Property>
+				<Property Name="Source[6].Container.applyProperties" Type="Bool">true</Property>
+				<Property Name="Source[6].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/My Computer/Random JSON API.lvlib/Type Defs</Property>
+				<Property Name="Source[6].properties[0].type" Type="Str">Allow debugging</Property>
+				<Property Name="Source[6].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[6].propertiesCount" Type="Int">1</Property>
+				<Property Name="Source[6].type" Type="Str">Container</Property>
+				<Property Name="SourceCount" Type="Int">7</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">Random.org Packed Library</Property>
 				<Property Name="TgtF_internalName" Type="Str">Random.org Packed Library</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2015 </Property>
