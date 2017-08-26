@@ -3,7 +3,7 @@ Ben Manthey
 ben.manthey@gmail.com
 
 Requirements:
-LabVIEW 2014, basic edition. No additional files needed.
+LabVIEW 2017, basic edition. No additional files needed.
 Should be cross platforn but I have no way of testing this.
 
 API Key can be obtained from: api.random.org
