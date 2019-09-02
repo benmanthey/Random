@@ -20,6 +20,7 @@ Known Issues:
 
 Version:
 
+1.0.1.0 -- Locked main lvlib to hide private classes
 1.0.0.0 -- October 24, 2015 -- Rearranged all files into correct directory structure, add compiler optimizations, will now compile into smaller and faster LVLIBP file. 
 0.9.2.0 -- June 20, 2015 -- Added info on API Key and Licensing
 0.9.1.0 -- June 15, 2015 -- Moved two files into proper directories
